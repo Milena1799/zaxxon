@@ -21,6 +21,11 @@ public class CamaraMove : MonoBehaviour
 
     void MoverCamara()
     {
+        float newX = personajeScript.transform.position.x;
+        float newY = personajeScript.transform.position.y;
+        float newZ = transform.position.z;
         transform.LookAt(personaje);
+        transform.position = new Vector3(newX, newY, newZ);
     }
+       
 }

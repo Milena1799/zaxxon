@@ -24,8 +24,7 @@ public class PersonajeScript : MonoBehaviour
         transform.Translate(Vector3.right * Time.deltaTime * speed * desp1H);
         float desplV = Input.GetAxis("Vertical");
         transform.Translate(Vector3.left * Time.deltaTime * speed * desplV);
-        float desplZ = Input.GetAxis("Profundidad");
-        transform.Translate(Vector3.back * Time.deltaTime * speed * desplZ);
+       
 
     }
 
